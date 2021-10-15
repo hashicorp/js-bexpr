@@ -7,7 +7,7 @@
   "author": "HashiCorp",
   "license": "MPL-2.0",
   "scripts": {
-    "build": "pegjs grammar/grammar.pegjs"
+    "build": "pegjs -o src/grammar.js grammar/grammar.pegjs"
   },
   "devDependencies": {
     "pegjs": "^0.10.0"
