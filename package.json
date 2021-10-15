@@ -10,6 +10,7 @@
     "build": "pegjs -o src/grammar.js grammar/grammar.pegjs"
   },
   "devDependencies": {
+    "json-pointer": "^0.6.1",
     "pegjs": "^0.10.0"
   }
 }
