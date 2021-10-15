@@ -3,7 +3,7 @@
 Generic boolean expression evaluation in JavaScript.
 Inspired by [go-bexpr](https://github.com/hashicorp/go-bexpr).
 
-js-bexpr is a Go (golang) library to provide generic boolean expression
+js-bexpr is a JavaScript library to provide generic boolean expression
 evaluation for JavaScript objects. Under the hood, js-bexpr uses
 [json-pointer][json-pointer], meaning that any path within an object that can be
 expressed via that library can be used with js-bexpr.
