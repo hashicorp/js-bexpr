@@ -66,6 +66,7 @@ Failed to run evaluation of expression "/foo/unexported" == no: SyntaxError: Exp
 ## Differences from go-bexpr
 
 - Selectors must be quoted strings in JSON pointer format (slashes, not dots).
+- The unary `not` operator is not supported.
 - Only the following match expressions are currently supported:
   - `==`
   - `!=`
