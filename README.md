@@ -20,15 +20,15 @@ const context = {
     x: 5,
     y: 'foo',
     z: true,
-    hidden: 'yes',
-    unexported: 'no'
+    test1: 'yes',
+    test2: 'no'
   },
   bar: {
     x: 42,
     y: 'bar',
     z: false,
-    hidden: 'no',
-    unexported: 'yes'
+    test1: 'no',
+    test2: 'yes'
   }
 };
 
@@ -37,9 +37,9 @@ const expressions = [
   '"/bar/y" == "bar"',
   '"/foo/baz" == true',
   // will error in evaluator creation
-  '"/bar/hidden" != yes',
+  '"/bar/test1" != nosuchtoken',
   // will error in evaluator creation
-  '"/foo/unexported" == no'
+  '"/foo/test2" == nosuchtoken'
 ];
 
 expressions.forEach((expression) => {
@@ -59,7 +59,7 @@ This will output:
 Result of expression "/foo/x" == 5 evaluation: true
 Result of expression "/bar/y" == "bar" evaluation: true
 Result of expression "/foo/baz" == true evaluation: false
-Failed to run evaluation of expression "/bar/hidden" != yes: SyntaxError: Expected boolean, null, number, string, or whitespace but "y" found.
+Failed to run evaluation of expression "/bar/hidden" != yes: SyntaxError: Expected boolean, null, number, string, or whitespace but "n" found.
 Failed to run evaluation of expression "/foo/unexported" == no: SyntaxError: Expected boolean, null, number, string, or whitespace but "n" found.
 ```
 
