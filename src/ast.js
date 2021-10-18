@@ -2,13 +2,6 @@ const pointer = require('json-pointer');
 const parse = require('./grammar.js').parse;
 
 class BooleanExpressionAST {
-  // =attributes
-
-  /**
-   * Root expression in the AST.
-   */
-  root;
-
   // =methods
 
   /**
