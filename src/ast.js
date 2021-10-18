@@ -90,7 +90,7 @@ class BooleanExpressionEvaluator {
    */
   in(value, selector, context) {
     const realValue = this.lookup(context, selector);
-    return value?.includes(realValue);
+    return realValue?.includes(value);
   }
 
   /**
