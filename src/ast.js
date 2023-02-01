@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 const pointer = require('json-pointer');
 const parse = require('./grammar.js').parse;
 
