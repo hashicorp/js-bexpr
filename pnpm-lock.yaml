@@ -1,0 +1,40 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      json-pointer:
+        specifier: ^0.6.2
+        version: 0.6.2
+    devDependencies:
+      pegjs:
+        specifier: ^0.10.0
+        version: 0.10.0
+
+packages:
+
+  foreach@2.0.6:
+    resolution: {integrity: sha512-k6GAGDyqLe9JaebCsFCoudPPWfihKu8pylYXRlqP1J7ms39iPoTtk2fviNglIeQEwdh0bQeKJ01ZPyuyQvKzwg==}
+
+  json-pointer@0.6.2:
+    resolution: {integrity: sha512-vLWcKbOaXlO+jvRy4qNd+TI1QUPZzfJj1tpJ3vAXDych5XJf93ftpUKe5pKCrzyIIwgBJcOcCVRUfqQP25afBw==}
+
+  pegjs@0.10.0:
+    resolution: {integrity: sha512-qI5+oFNEGi3L5HAxDwN2LA4Gg7irF70Zs25edhjld9QemOgp0CbvMtbFcMvFtEo1OityPrcCzkQFB8JP/hxgow==}
+    engines: {node: '>=0.10'}
+    hasBin: true
+
+snapshots:
+
+  foreach@2.0.6: {}
+
+  json-pointer@0.6.2:
+    dependencies:
+      foreach: 2.0.6
+
+  pegjs@0.10.0: {}
